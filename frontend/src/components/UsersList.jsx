@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import Skeleton from 'react-loading-skeleton';
+import { useEffect, useState } from 'react';
+import Shimmer from './Shimmer';
 import UserCard from './UserCard';
 import { base_url } from '../assets/urls';
 
@@ -20,7 +20,7 @@ export default function UsersList() {
       }
     } catch (error) {
       console.error('Error fetching user list:', error);
-      setLoading(false);
+      setLoading(true);
     }
   };
 
@@ -32,11 +32,10 @@ export default function UsersList() {
   return (
     <div>
       <div className='m-4 p-2 font-bold text-white text-xl rounded-lg bg-blue-700'>Users List</div>
-
       {loading ? (
         // Shimmer UI while loading
         <>
-          <Skeleton height={80} width={300} count={10} />
+          <Shimmer className="m-4 p-2" count={10} ></Shimmer>
         </>
       ) : (
         // Actual user cards when data is available

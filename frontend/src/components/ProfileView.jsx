@@ -228,13 +228,13 @@ function ProfileView() {
         ) : (
 
           <div className="shimmer-container flex flex-wrap gap-3">
-              <div className="shimmer-box bg-blue-500 w-full md:w-[70%] h-50 rounded-xl">
+              <div className="shimmer-box bg-gray-500 w-full md:w-[70%] h-50 rounded-xl">
                 <p className="m-3 text-2xl">Name</p>
               </div>
-              <div className="shimmer-box bg-blue-500 w-full md:w-[70%] h-20 rounded-xl">
+              <div className="shimmer-box bg-gray-500 w-full md:w-[70%] h-20 rounded-xl">
                 <p className="m-3 text-2xl">Data...</p>
               </div>
-              <div className="shimmer-box bg-blue-500 w-full md:w-[70%] h-20 rounded-xl">
+              <div className="shimmer-box bg-gray-500 w-full md:w-[70%] h-20 rounded-xl">
                 <p className="m-3 text-2xl">.....</p>
               </div>
           </div>
