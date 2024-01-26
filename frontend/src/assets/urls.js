@@ -1,0 +1,1 @@
+export const base_url = "https://test-api-wheat-kappa.vercel.app/";
