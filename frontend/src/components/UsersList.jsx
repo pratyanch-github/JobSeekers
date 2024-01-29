@@ -35,7 +35,7 @@ export default function UsersList() {
       {loading ? (
         // Shimmer UI while loading
         <>
-          <Shimmer className="m-4 p-2" count={10} ></Shimmer>
+          <Shimmer count={10} ></Shimmer>
         </>
       ) : (
         // Actual user cards when data is available

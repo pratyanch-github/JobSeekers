@@ -31,13 +31,13 @@ export default function UserCard({ user }) {
       console.error("Error updating profile:", error);
     }
   }
-
+  console.log(user.username);
   return (
     <div className='flex flex-col m-2 p-4 rounded-lg bg-gray-700 border-2 border-gray-600'>
       <div className='flex flex-col gap-2 justify-between items-center mb-4'>
        
         <div className='name  w-[100%]'>
-          <h2 className='text-xl w-[100%]  text-white font-bold'>{user.username.toUpperCase()}</h2>
+          <h2 className='text-xl w-[100%]  text-white font-bold'>{user.username?user.username.toUpperCase():"No Name"}</h2>
           <p className='text-gray-500 w-[100%]'>{user.bio}</p>
         </div>
 
